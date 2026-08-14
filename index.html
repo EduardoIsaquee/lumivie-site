@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lumivié - Hidratante Corporal</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:linear-gradient(180deg,#f8d1d1,#f4c4c4,#f9dede);
+    color:#6d4b4b;
+}
+
+header{
+    width:100%;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:flex-end;
+}
+
+nav a{
+    text-decoration:none;
+    color:#b8845c;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    transform:translateY(-2px);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 50px;
+}
+
+.logo{
+    width:320px;
+    max-width:90%;
+    margin-bottom:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:70px;
+    color:#b8845c;
+}
+
+.subtitulo{
+    font-size:22px;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.frase{
+    max-width:700px;
+    font-size:22px;
+    font-style:italic;
+    margin-bottom:40px;
+}
+
+.botao{
+    display:inline-block;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:50px;
+    background:#b8845c;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+
+}
+
+.botao:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:100px 10%;
+}
+
+.titulo{
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:55px;
+    color:#b8845c;
+    margin-bottom:40px;
+}
+
+.sobre,
+.produto{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.beneficios{
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.card{
+    background: rgba(255,255,255,.5);
+    padding: 25px;
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.cardi{
+    background: rgba(255,255,255,.5);
+    padding: 25px;
+    width: 220px;
+    border-radius: 500px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.carda{
+    background: rgba(255, 255, 255,.5);
+    padding: 25px;
+    width: 470px;
+    border-radius: 500px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-10px) scale(1.05);
+
+    background: rgba(255,255,255,.8);
+
+    box-shadow: 0 15px 35px rgba(184,132,92,.25);
+}
+
+.instagram{
+    text-align:center;
+}
+
+footer{
+    padding:40px;
+    text-align:center;
+    background:rgba(255,255,255,.3);
+}
+
+@media(max-width:768px){
+
+    .beneficios{
+        grid-template-columns: 1fr;
+    }
+
+    h1{
+        font-size:50px;
+    }
+
+    .titulo{
+        font-size:40px;
+    }
+
+    .frase{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+        <class="link"> <a href="https://www.instagram.com/lumivie_produtos?utm_source=qr&igsh=c3l5czdzam91dW1j">Instagram</a></class>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <!-- Troque o nome da imagem pela sua logo -->
+
+    <img src="logo.jpg" class="logo" alt="Logo Lumivié">
+
+    <h1>Lumivié</h1>
+
+    <p class="subtitulo">
+        HIDRATANTE CORPORAL
+    </p>
+
+    <p class="frase">
+        Pimenta Rosa & Glitter: brilho, hidratação e sofisticação para transformar o cuidado com a pele em um momento especial.
+    </p>
+
+    <a href="https://www.instagram.com/lumivie_produtos?utm_source=qr&igsh=c3l5czdzam91dW1j" class="botao">
+        Conheça nosso Instagram
+    </a>
+
+</section>
+
+<section>
+
+    <h2 class="titulo">
+        Sobre a marca
+    </h2>
+
+    <div class="sobre">
+
+        <p>
+            A Lumivié nasceu com o propósito de transformar a rotina de cuidados pessoais em uma experiência elegante, delicada e inesquecível.
+        </p>
+
+        <br>
+
+        <p>
+            Inspirada na beleza e no brilho da pele saudável, a marca desenvolve produtos que combinam hidratação, fragrâncias marcantes e ingredientes cuidadosamente selecionados.
+        </p>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="titulo">
+        Nosso produto
+    </h2>
+
+    <div class="produto">
+
+        <p>
+            O Hidratante Corporal Pimenta Rosa & Glitter foi desenvolvido para proporcionar hidratação intensa, perfume sofisticado e um toque luminoso à pele.
+        </p>
+
+        <div class="beneficios">
+
+            <div class="card">
+                ✨<br><br>
+                Hidratação profunda
+            </div>
+
+            <div class="card">
+                🌸<br><br>
+                Fragrância sofisticada
+            </div>
+
+            <div class="card">
+                💖<br><br>
+                Pele macia e aveludada
+            </div>
+
+            <div class="card">
+                ✨<br><br>
+                Brilho delicado
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="titulo">
+        Nossos ingredientes
+    </h2>
+
+    <div class="produto">
+
+        <p>
+            O Hidratante Corporal Pimenta Rosa & Glitter utiliza ingredientes confortáveis à pele.
+        </p>
+
+        <div class="beneficios">
+
+            <div class="cardi">
+                🧴<br><br>
+                Creme Hidratante neutro
+            </div>
+
+            <div class="cardi">
+                🥥<br><br>
+                Óleo de coco
+            </div>
+
+            <div class="carda">
+                🌶️<br><br>
+                Essência "Pimenta Rosa"
+            </div>
+</section>
+
+<section class="instagram">
+
+    <h2 class="titulo">
+        Siga a Lumivié
+    </h2>
+
+    <p>
+        Acompanhe as novidades e descubra mais sobre o nosso produto.
+    </p>
+
+    <br><br>
+
+    <a href="https://www.instagram.com/lumivie_produtos?utm_source=qr&igsh=c3l5czdzam91dW1j" class="botao">
+        Instagram
+    </a>
+
+</section>
+
+<footer>
+
+    © 2026 - Lumivié | Pimenta Rosa & Glitter
+
+</footer>
+
+</body>
+</html>
