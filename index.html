@@ -153,26 +153,42 @@ section{
     transition: all .3s ease;
     cursor: pointer;
 }
-.cardi{
+.ingredientes{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardi,
+.carda{
     background: rgba(255,255,255,.5);
     padding: 25px;
-    width: 220px;
-    border-radius: 500px;
+    border-radius: 50px;
     box-shadow: 0 5px 20px rgba(0,0,0,.08);
 
     transition: all .3s ease;
     cursor: pointer;
+
+    width: 100%;
 }
+
+.cardi:hover,
+.carda:hover{
+    transform: translateY(-10px);
+
+    background: rgba(255,255,255,.8);
+
+    box-shadow: 0 15px 35px rgba(184,132,92,.25);
+}
+
 .carda{
-    background: rgba(255, 255, 255,.5);
-    padding: 25px;
-    width: 470px;
-    border-radius: 500px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.08);
-
-    transition: all .3s ease;
-    cursor: pointer;
+    grid-column: 1 / 3;
 }
+
 .card:hover{
     transform: translateY(-10px) scale(1.05);
 
@@ -191,10 +207,24 @@ footer{
     background:rgba(255,255,255,.3);
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
     .beneficios{
         grid-template-columns: 1fr;
+    }
+
+    .ingredientes{
+        grid-template-columns: 1fr;
+    }
+
+    .carda{
+        grid-column: auto;
+    }
+
+    .card,
+    .cardi,
+    .carda{
+        width: 100%;
     }
 
     h1{
@@ -208,7 +238,6 @@ footer{
     .frase{
         font-size:18px;
     }
-
 }
 
 </style>
@@ -219,7 +248,7 @@ footer{
 <header>
 
     <nav>
-        <class="link"> <a href="https://www.instagram.com/lumivie_produtos?utm_source=qr&igsh=c3l5czdzam91dW1j">Instagram</a></class>
+        <div class="link"> <a href="https://www.instagram.com/lumivie_produtos?utm_source=qr&igsh=c3l5czdzam91dW1j">Instagram</a></div>
     </nav>
 
 </header>
@@ -320,22 +349,26 @@ footer{
             O Hidratante Corporal Pimenta Rosa & Glitter utiliza ingredientes confortáveis à pele.
         </p>
 
-        <div class="beneficios">
+<div class="ingredientes">
 
-            <div class="cardi">
-                🧴<br><br>
-                Creme Hidratante neutro
-            </div>
+    <div class="cardi">
+        🧴<br><br>
+        Creme Hidratante neutro
+    </div>
 
-            <div class="cardi">
-                🥥<br><br>
-                Óleo de coco
-            </div>
+    <div class="cardi">
+        🥥<br><br>
+        Óleo de coco
+    </div>
 
-            <div class="carda">
-                🌶️<br><br>
-                Essência "Pimenta Rosa"
-            </div>
+    <div class="carda">
+        🌶️<br><br>
+        Essência "Pimenta Rosa"
+    </div>
+
+</div>
+</div>
+
 </section>
 
 <section class="instagram">
